@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #bac3b5;
+}
+
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+    justify-content: center;
+}
+
+
+.card {
+    height: 400px;
+    width: 285px;
+    background-color: #fffff4;
+    border-radius: 27px;
+    padding: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.097);
+    
+}
+
+
+.card-content {
+    border: 3px solid #60726e;
+    height: 100%;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 4fr 1fr 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+
+.card-number {
+    color: #eeab4e;
+    font-size: 23px;
+    font-weight: 500;
+    grid-column: 3 / span 1;
+    /* Adjusted to start at the third column */
+}
+
+.stat-value {
+    font-size: 13px;
+    /* or adjust to your preferred size */
+}
+
+.stat-icon {
+    font-size: 13px;
+    /* or adjust to your preferred size */
+}
+
+.rocket-info {
+    font-size: 13px;
+    /* or adjust to your preferred size */
+}
+
+.goal-icon {
+    /* object-fit: cover;
+    height: 100%;
+    width: 100%; */
+    font-size: 13px;
+    padding: 1px;
+}
+
+.card-name {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.card-group {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.rocket-image {
+    padding: 10px;
+    grid-column: span 2;
+    max-width: 90%;
+    max-height: 170px;
+    /* border: 3px solid #ffedcc;
+    border-radius: 20px; */
+}
+
+.rocket-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.rocket-info {
+    grid-column: span 3;
+    font-size: 10px;
+}
+
+.card-title {
+    grid-column: span 2;
+
+    padding: 15px;
+    color: #df7c50;
+}
+.card-name:hover {
+    color: #eeab4e 
+}
+.card-group:hover {
+    color: #bac3b5
+}
